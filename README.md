@@ -1,4 +1,4 @@
-# Project Name
+# ELEC2117 Project
 
 This repository contains a Julia program that provides an interactive menu for running various analytical and plotting functions. Each function is executed based on the user’s input and displayed on the console.
 
