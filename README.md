@@ -32,7 +32,7 @@ The program features an interactive command-line interface that allows users to 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repo_name.git
+   git clone https://github.com/JPhusion/ELEC2117-Project.git
    cd repo_name
    ```
 
