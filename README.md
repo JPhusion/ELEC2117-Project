@@ -8,7 +8,6 @@ This repository contains a Julia program that provides an interactive menu for r
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Functions](#functions)
-- [License](#license)
 
 ## Overview
 
