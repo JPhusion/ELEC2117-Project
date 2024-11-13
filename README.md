@@ -67,4 +67,3 @@ Each function in this program performs a specific calculation or produces a plot
 11. **town2_intervention_plot_optimised()** - Optimised intervention plot for town2.
 12. **town2_intervention_immediately()** - Immediate intervention scenario for town2.
 
-## License
