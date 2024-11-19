@@ -186,7 +186,7 @@ function town1_intervention_plot_error()
     S0, I0, Is0, R0 = 5999.0, 1.0, 0.0, 0.0
     c, gamma, gamma_s, delta = 8.0, 1 / 7, 1 / 14, 1 / 30
     tspan = (0.0, 30.0)
-    beta_range, pi_range = 0.03:0.001:0.04*c, 0.0:0.01:1.0
+    beta_range, pi_range = 0.03:0.001:0.032*c, 0.0:0.01:1.0
     actual_times_intervention = collect(1:length(dataI))
     ps, epsilon_i = 0.15, 0.3
     tspan_intervention, intervention_day = (0.0, 100.0), 30
@@ -202,7 +202,7 @@ function town1_intervention_plot_error()
     )
 
     println("===== RESULTS =====")
-    println("Optimal beta: ", best_beta_i / c)
+    println("Optimal beta: ", best_beta_i)
     println("Optimal Pi:   ", best_pi)
     println("Used ps:      ", ps)
     println("")
@@ -230,7 +230,6 @@ function town1_intervention_plot_optimal()
             I0,
             Is0,
             R0,
-            # beta * c,
             best_beta_i,
             gamma,
             gamma_s,
@@ -249,6 +248,7 @@ function town1_intervention_plot_optimal()
     println("")
     return plt
 end
+
 function town1_intervention_plot_optimal_against_data()
     println("===== Plotting Town 1 Intervention Optimised Against Data =====")
     dataI, dataIs = get_town1_data_intervention()
@@ -330,7 +330,7 @@ function town2_intervention_plot_optimised()
     println("===== RESULTS =====")
     println("Optimal beta: ", best_beta_i / c)
     println("Optimal ps:   ", best_ps)
-    println("Intervention day: ", best_intervention_day)
+    println("Relative Intervention day: ", best_intervention_day)
     println("First case day:   ", first_case)
     println("")
     

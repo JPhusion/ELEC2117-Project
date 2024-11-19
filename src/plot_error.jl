@@ -86,7 +86,7 @@ function plot_error_intervention(S0, I0, Is0, R0, c, gamma, gamma_s, delta, ps, 
     # Highlight the best beta with the minimum error
     offset = 20
     scatter!([best_beta / c], [min_error], color=:red, label="Best Beta", markersize=2)
-    annotate!(best_beta / c, min_error + offset, text("Beta = $(best_beta/c)", :red, 4))
+    annotate!(best_beta / c, min_error + offset, text("Beta = $(best_beta/c)", :red, 8))
     
     # Return the best beta and the minimum error
     return plt, best_beta / c, min_error
